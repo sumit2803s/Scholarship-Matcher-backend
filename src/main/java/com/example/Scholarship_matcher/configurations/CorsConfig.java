@@ -15,8 +15,9 @@ public class CorsConfig {
             public void addCorsMappings(CorsRegistry registry) {
                 registry.addMapping("/**")
                         .allowedOrigins(
-                                "https://scholarship-matcher-frontend.vercel.app/", // 👈 your actual frontend URL
-                                "http://localhost:5173" // for local testing
+                                "https://scholarship-matcher-frontend.vercel.app/",
+                                "http://localhost:5173",
+                                "https://scholarship-matcher-backend-production.up.railway.app"
                         )
                         .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                         .allowedHeaders("*")
